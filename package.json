@@ -1,0 +1,17 @@
+{
+  "name": "linfo1113",
+  "version": "1.0.0",
+  "description": "Solutions et explications des TPs du cours LINFO1113 (Algorithmique numérique)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "1.0.0-alpha.52"
+  }
+}
