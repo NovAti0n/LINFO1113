@@ -1,7 +1,8 @@
 ---
 prev: false
 next: false
+lastUpdated: false
 ---
 
 # Bienvenue !
-Selectionnez un TP dans la liste à gauche pour voir les solutions.
+Sélectionnez un TP dans la liste à gauche pour voir les solutions.

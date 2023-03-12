@@ -1,4 +1,95 @@
 import { defineConfig } from "vitepress";
+import mathjax3 from "markdown-it-mathjax3";
+
+const customElements = [
+    "mjx-container",
+    "mjx-assistive-mml",
+    "math",
+    "maction",
+    "maligngroup",
+    "malignmark",
+    "menclose",
+    "merror",
+    "mfenced",
+    "mfrac",
+    "mi",
+    "mlongdiv",
+    "mmultiscripts",
+    "mn",
+    "mo",
+    "mover",
+    "mpadded",
+    "mphantom",
+    "mroot",
+    "mrow",
+    "ms",
+    "mscarries",
+    "mscarry",
+    "mscarries",
+    "msgroup",
+    "mstack",
+    "mlongdiv",
+    "msline",
+    "mstack",
+    "mspace",
+    "msqrt",
+    "msrow",
+    "mstack",
+    "mstack",
+    "mstyle",
+    "msub",
+    "msup",
+    "msubsup",
+    "mtable",
+    "mtd",
+    "mtext",
+    "mtr",
+    "munder",
+    "munderover",
+    "semantics",
+    "math",
+    "mi",
+    "mn",
+    "mo",
+    "ms",
+    "mspace",
+    "mtext",
+    "menclose",
+    "merror",
+    "mfenced",
+    "mfrac",
+    "mpadded",
+    "mphantom",
+    "mroot",
+    "mrow",
+    "msqrt",
+    "mstyle",
+    "mmultiscripts",
+    "mover",
+    "mprescripts",
+    "msub",
+    "msubsup",
+    "msup",
+    "munder",
+    "munderover",
+    "none",
+    "maligngroup",
+    "malignmark",
+    "mtable",
+    "mtd",
+    "mtr",
+    "mlongdiv",
+    "mscarries",
+    "mscarry",
+    "msgroup",
+    "msline",
+    "msrow",
+    "mstack",
+    "maction",
+    "semantics",
+    "annotation",
+    "annotation-xml"
+];
 
 export default defineConfig({
     lang: "fr-BE",
@@ -7,8 +98,22 @@ export default defineConfig({
     cleanUrls: true,
     lastUpdated: true,
     head: [
+        ["link", { rel: "icon", type: "image/x-icon", href: "favicon/favicon.png" }],
         ["meta", { name: "theme-color", content: "#3c8772" }]
     ],
+    markdown: {
+        lineNumbers: true,
+        config: (md) => {
+            md.use(mathjax3);
+        }
+    },
+    vue: {
+        template: {
+            compilerOptions: {
+                isCustomElement: (tag) => customElements.includes(tag)
+            }
+        }
+    },
     themeConfig: {
         sidebar: [
             {
@@ -36,6 +141,7 @@ export default defineConfig({
         },
         outline: {
             label: "Sur cette page"
-        }
+        },
+        lastUpdatedText: "Mis à jour le "
     }
 });
