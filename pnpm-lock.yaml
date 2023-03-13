@@ -2,11 +2,11 @@ lockfileVersion: 5.4
 
 specifiers:
   markdown-it-mathjax3: ^4.3.2
-  vitepress: 1.0.0-alpha.52
+  vitepress: 1.0.0-alpha.54
 
 devDependencies:
   markdown-it-mathjax3: 4.3.2
-  vitepress: 1.0.0-alpha.52
+  vitepress: 1.0.0-alpha.54
 
 packages:
 
@@ -21,6 +21,9 @@ packages:
     peerDependencies:
       '@algolia/client-search': '>= 4.9.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
+    peerDependenciesMeta:
+      '@algolia/client-search':
+        optional: true
     dependencies:
       '@algolia/autocomplete-shared': 1.7.4
       algoliasearch: 4.15.0
@@ -948,8 +951,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-alpha.52:
-    resolution: {integrity: sha512-DAaO5/yGXCVHXXwVJO/T1wS03curMgOhYnh1LVDTZAf0s1qr282id5j45IYEWthWcUZRD6ST9EAIZNsXHo4O7g==}
+  /vitepress/1.0.0-alpha.54:
+    resolution: {integrity: sha512-VvnXyRIffMUmoKHbxlXZiajsB8TVk8z4uLq3lowDbere/u1FMFMQPR3xzz7nwWjUEJnm2mw5D43e9Pni16qUUw==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.3.3

@@ -13,6 +13,13 @@
   "license": "ISC",
   "devDependencies": {
     "markdown-it-mathjax3": "^4.3.2",
-    "vitepress": "1.0.0-alpha.52"
+    "vitepress": "1.0.0-alpha.54"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
   }
 }
