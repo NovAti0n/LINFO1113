@@ -1,3 +1,3 @@
-import "./styles/mathjax3.css";
+import "./styles/custom.css";
 
 export { default } from "vitepress/theme";
