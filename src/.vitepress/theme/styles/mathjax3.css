@@ -1,7 +1,8 @@
 mjx-container {
     display: inline-block;
     margin: auto 2px -2px;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 mjx-container > svg {
