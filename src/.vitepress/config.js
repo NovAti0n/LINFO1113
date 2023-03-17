@@ -102,7 +102,6 @@ export default defineConfig({
         ["meta", { name: "theme-color", content: "#3c8772" }]
     ],
     markdown: {
-        lineNumbers: true,
         config: (md) => {
             md.use(mathjax3);
         }
