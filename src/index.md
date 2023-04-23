@@ -11,7 +11,15 @@ Certaines pages peuvent prendre quelques secondes à charger. [Vitepress](https:
 
 # Bienvenue !
 
-Sélectionnez un TP dans la liste pour voir les solutions.
+Sélectionnez un TP dans le menu pour voir les solutions.
+
+## Mes réponses sont différentes et fonctionnent quand même. Pourquoi ?
+
+Les réponses données sur ce site passent les tests sur INGInious.
+
+Pour les questions de programmation, il est normal qu'il existe de nombreux scripts différents qui fonctionnent. Les implémentations proposées sont là à titre indicatif et ne sont pas garanties d'être les meilleures possibles.
+
+Pour les questions à réponse numérique, certaines demandent des approximations et INGInious accepte donc une intervalle de réponses. Il se peut que la vôtre passe également si elle est différente de peu de la réponse proposée ici.
 
 ## Comment puis-je aider ce site ?
 
