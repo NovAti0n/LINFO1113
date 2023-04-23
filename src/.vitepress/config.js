@@ -96,7 +96,6 @@ export default defineConfig({
     title: "LINFO1113",
     description: "Solutions et explications des TPs du cours LINFO1113 (Algorithmique numérique)",
     cleanUrls: true,
-    lastUpdated: true,
     head: [
         ["link", { rel: "icon", type: "image/x-icon", href: "favicon/favicon.png" }],
         ["meta", { name: "theme-color", content: "#3c8772" }]
@@ -114,6 +113,19 @@ export default defineConfig({
         }
     },
     themeConfig: {
+        darkModeSwitchLabel: "Apparence",
+        docFooter: {
+            prev: "TP précédent",
+            next: "TP suivant"
+        },
+        editLink: {
+            pattern: "https://github.com/NovAti0n/LINFO1113/edit/main/src/:path",
+            text: "Éditer cette page sur GitHub"
+        },
+        outline: {
+            label: "Sur cette page"
+        },
+        returnToTopLabel: "Revenir au début",
         sidebar: [
             {
                 text: "Exercices de TPs",
@@ -134,13 +146,8 @@ export default defineConfig({
                 ]
             }
         ],
-        docFooter: {
-            prev: "Exercice précédent",
-            next: "Exercice suivant"
-        },
-        outline: {
-            label: "Sur cette page"
-        },
-        lastUpdatedText: "Mis à jour le "
+        socialLinks: [
+            { icon: "github", link: "https://github.com/NovAti0n/LINFO1113" }
+        ]
     }
 });
