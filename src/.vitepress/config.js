@@ -135,6 +135,7 @@ export default defineConfig({
                     { text: "E1.2", link: "/e1-2" },
                     { text: "E2.1", link: "/e2-1" },
                     { text: "E2.2", link: "/e2-2" },
+                    { text: "E2.3", link: "/e2-3" },
                     { text: "E3.1", link: "/e3-1" },
                     { text: "E3.2", link: "/e3-2" },
                     { text: "E3.3", link: "/e3-3" },
