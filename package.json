@@ -1,25 +1,25 @@
 {
-  "name": "linfo1113",
-  "version": "1.0.0",
-  "description": "Solutions et explications des TPs du cours LINFO1113 (Algorithmique numérique)",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vitepress dev src",
-    "build": "vitepress build src",
-    "preview": "vitepress preview src"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "markdown-it-mathjax3": "^4.3.2",
-    "vitepress": "1.0.0-beta.1"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search"
-      ]
-    }
-  }
+	"name": "linfo1113",
+	"version": "1.0.0",
+	"description": "Solutions et explications des TPs du cours LINFO1113 (Algorithmique numérique)",
+	"main": "index.js",
+	"scripts": {
+		"dev": "vitepress dev src",
+		"build": "vitepress build src",
+		"preview": "vitepress preview src"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"markdown-it-mathjax3": "^4.3.2",
+		"vitepress": "1.0.0-beta.3"
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"ignoreMissing": [
+				"@algolia/client-search"
+			]
+		}
+	}
 }
